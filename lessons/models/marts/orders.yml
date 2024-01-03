@@ -1,8 +1,22 @@
 version: 2
 
+groups:
+  - name: sales
+    owner:
+      email: sales@my-company.com
+
+  - name: marketing
+    owner:
+      email: marketing@my-company.com
+
 models:
   - name: orders
     description: "Table of order level information"
+    config:
+      group: sales
+
+    access: protected
+
     columns:
 
     # Columns from stg_ecommerce__orders
