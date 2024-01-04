@@ -1,3 +1,5 @@
+{{ config(tags=['my_tag']) }}
+
 WITH
 
 -- Aggregate measures
